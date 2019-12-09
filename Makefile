@@ -12,7 +12,7 @@ $(exec): $(objects)
 
 install:
 	make
-	copy "hello.out" "C:/Portable/SLang/hello"
+	copy "hello.out" "C:/Portable/SLang/hello.out"
 
 clean:
 	-rm *.out
