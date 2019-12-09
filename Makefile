@@ -10,6 +10,10 @@ $(exec): $(objects)
 %.o: %.c include/%.h
 	gcc -c $(flags) $< -o $@
 
+install:
+	make
+	copy "hello.out" "C:/Portable/SLang/hello"
+
 clean:
 	-rm *.out
 	-rm *.o
